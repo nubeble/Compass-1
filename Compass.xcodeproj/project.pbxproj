@@ -13,8 +13,9 @@
 		E650C11E23A6D39600ECA4AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E650C11D23A6D39600ECA4AC /* Assets.xcassets */; };
 		E650C12123A6D39600ECA4AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E650C12023A6D39600ECA4AC /* Preview Assets.xcassets */; };
 		E650C12423A6D39600ECA4AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E650C12223A6D39600ECA4AC /* LaunchScreen.storyboard */; };
-		E650C12F23A6D39600ECA4AC /* CompassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E650C12E23A6D39600ECA4AC /* CompassTests.swift */; };
-		E650C13A23A6D39600ECA4AC /* CompassUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E650C13923A6D39600ECA4AC /* CompassUITests.swift */; };
+		E650C14823A6D9CD00ECA4AC /* CompassHeading.swift in Sources */ = {isa = PBXBuildFile; fileRef = E650C14723A6D9CD00ECA4AC /* CompassHeading.swift */; };
+		E650C14A23A6DA0E00ECA4AC /* DistanceNorth.swift in Sources */ = {isa = PBXBuildFile; fileRef = E650C14923A6DA0E00ECA4AC /* DistanceNorth.swift */; };
+		E650C14C23A6DA4300ECA4AC /* LocalSolarTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = E650C14B23A6DA4300ECA4AC /* LocalSolarTime.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,11 +45,10 @@
 		E650C12323A6D39600ECA4AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E650C12523A6D39600ECA4AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E650C12A23A6D39600ECA4AC /* CompassTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CompassTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E650C12E23A6D39600ECA4AC /* CompassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassTests.swift; sourceTree = "<group>"; };
-		E650C13023A6D39600ECA4AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E650C13523A6D39600ECA4AC /* CompassUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CompassUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E650C13923A6D39600ECA4AC /* CompassUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassUITests.swift; sourceTree = "<group>"; };
-		E650C13B23A6D39600ECA4AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E650C14723A6D9CD00ECA4AC /* CompassHeading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassHeading.swift; sourceTree = "<group>"; };
+		E650C14923A6DA0E00ECA4AC /* DistanceNorth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceNorth.swift; sourceTree = "<group>"; };
+		E650C14B23A6DA4300ECA4AC /* LocalSolarTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalSolarTime.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +80,6 @@
 			isa = PBXGroup;
 			children = (
 				E650C11623A6D39200ECA4AC /* Compass */,
-				E650C12D23A6D39600ECA4AC /* CompassTests */,
-				E650C13823A6D39600ECA4AC /* CompassUITests */,
 				E650C11523A6D39200ECA4AC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,6 +100,9 @@
 				E650C11723A6D39200ECA4AC /* AppDelegate.swift */,
 				E650C11923A6D39200ECA4AC /* SceneDelegate.swift */,
 				E650C11B23A6D39200ECA4AC /* ContentView.swift */,
+				E650C14723A6D9CD00ECA4AC /* CompassHeading.swift */,
+				E650C14923A6DA0E00ECA4AC /* DistanceNorth.swift */,
+				E650C14B23A6DA4300ECA4AC /* LocalSolarTime.swift */,
 				E650C11D23A6D39600ECA4AC /* Assets.xcassets */,
 				E650C12223A6D39600ECA4AC /* LaunchScreen.storyboard */,
 				E650C12523A6D39600ECA4AC /* Info.plist */,
@@ -116,24 +117,6 @@
 				E650C12023A6D39600ECA4AC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		E650C12D23A6D39600ECA4AC /* CompassTests */ = {
-			isa = PBXGroup;
-			children = (
-				E650C12E23A6D39600ECA4AC /* CompassTests.swift */,
-				E650C13023A6D39600ECA4AC /* Info.plist */,
-			);
-			path = CompassTests;
-			sourceTree = "<group>";
-		};
-		E650C13823A6D39600ECA4AC /* CompassUITests */ = {
-			isa = PBXGroup;
-			children = (
-				E650C13923A6D39600ECA4AC /* CompassUITests.swift */,
-				E650C13B23A6D39600ECA4AC /* Info.plist */,
-			);
-			path = CompassUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +251,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E650C11823A6D39200ECA4AC /* AppDelegate.swift in Sources */,
+				E650C14A23A6DA0E00ECA4AC /* DistanceNorth.swift in Sources */,
+				E650C14C23A6DA4300ECA4AC /* LocalSolarTime.swift in Sources */,
+				E650C14823A6D9CD00ECA4AC /* CompassHeading.swift in Sources */,
 				E650C11A23A6D39200ECA4AC /* SceneDelegate.swift in Sources */,
 				E650C11C23A6D39200ECA4AC /* ContentView.swift in Sources */,
 			);
@@ -277,7 +263,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E650C12F23A6D39600ECA4AC /* CompassTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +270,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E650C13A23A6D39600ECA4AC /* CompassUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +423,7 @@
 				DEVELOPMENT_TEAM = XT5CLRK4A4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Compass/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -446,7 +431,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = lokyiec.Compass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -459,6 +444,7 @@
 				DEVELOPMENT_TEAM = XT5CLRK4A4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Compass/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,7 +452,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = lokyiec.Compass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
